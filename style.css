@@ -1,0 +1,19 @@
+body {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+#mob {
+  width: 64%;
+}
+
+@media (min-width: 769px) {
+  .is-96x96 {
+    margin: auto;
+    margin-bottom: 0.75em;
+  }
+}
+
+.burger {
+  color: red;
+  background: #fff;
+}

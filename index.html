@@ -8,11 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Anonymous Pro', monospace;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,10 +21,15 @@
         </a>
       </div>
     </div>
-      <div class="nav-right">
+      <div id="menu" class="nav-right is-hidden-touch navbar-menu">
         <a href="#" class="nav-item has-text-white">Home</a>
         <a href="#wedo" class="nav-item has-text-white">What We Do</a>
         <a href="#contact" class="nav-item has-text-white">Contact Us</a>
+      </div>
+      <div class="navbar-burger burger" data-target="menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
     <div class="hero-body">
@@ -47,35 +48,35 @@
   </section>
   <section class="section">
     <div class="container">
-      <div class="columns is-gapless is-centered">
-        <div class="column is-4">
-          <figure class="image is-96x96" style="margin: auto;">
+      <div class="columns is-gapless-tablet is-centered is-multiline">
+        <div class="column is-4-tablet">
+          <figure class="image is-96x96">
             <img src="assets/find-icon.svg">
           </figure>
-          <h1 class="title has-text-centered is-uppercase">Find Help Easily</h1>
-          <p class="subtitle has-text-centered">We'll help connect you with freelance professionals offering a range of services, offers and promotions.</p>
+          <h1 class="title has-text-centered-tablet is-uppercase">Find Help Easily</h1>
+          <p class="subtitle has-text-centered-tablet">We'll help connect you with freelance professionals offering a range of services, offers and promotions.</p>
         </div>
-        <div class="column is-4">
-          <figure class="image is-96x96" style="margin: auto;">
+        <div class="column is-4-tablet">
+          <figure class="image is-96x96">
             <img src="assets/comp-icon.svg">
           </figure>
-          <h1 class="title has-text-centered is-uppercase">Online Submission</h1>
-          <p class="subtitle has-text-centered">You can use your home computer to submit documents to our database of professionals. Moreover, you can set up a profile with documents, which you can update.</p>
+          <h1 class="title has-text-centered-tablet is-uppercase">Online Submission</h1>
+          <p class="subtitle has-text-centered-tablet">You can use your home computer to submit documents to our database of professionals. Moreover, you can set up a profile with documents, which you can update.</p>
         </div>
-        <div class="column is-4">
-          <figure class="image is-96x96" style="margin: auto;">
-            <img src="assets/mobile-icon.svg" style="width: 64%;">
+        <div class="column is-4-tablet">
+          <figure class="image is-96x96">
+            <img id="mob" src="assets/mobile-icon.svg">
           </figure>
-          <h1 class="title has-text-centered is-uppercase">Mobile Services</h1>
-          <p class="subtitle has-text-centered">Get the app and enjoy our services on the go, with a mobile-only news feed detailing the availability of the couriers in our network.</p>
+          <h1 class="title has-text-centered-tablet is-uppercase">Mobile Services</h1>
+          <p class="subtitle has-text-centered-tablet">Get the app and enjoy our services on the go, with a mobile-only news feed detailing the availability of the couriers in our network.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="section" style="padding: 3rem 0;">
+  <section id="form" class="section">
       <div class="columns is-centered">
         <div class="column" style="background: lavender;">
-          <div class="card" style="margin-left: 0.75em;">
+          <div id="#card" class="card">
             <div class="card-header">
               <h1 class="card-header-title">
                 BS-INF39 Form
