@@ -45,10 +45,6 @@ body {
   margin: 0.75em;
 }
 
-#slick {
-  background-color: #f7f7f7;
-}
-
 #slideshow {
   width: 50%;
 }
@@ -73,7 +69,7 @@ body {
   }
 
   #slideshow {
-    margin-top: 0.75rem;
+    margin-top: 2.5rem;
   }
 
   #card {
