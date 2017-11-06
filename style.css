@@ -6,6 +6,11 @@ body {
   background: #ddd;
 }
 
+.xcentered {
+  display: block;
+  margin: auto;
+}
+
 #nav {
   background: #aaa5;
 }
@@ -40,6 +45,19 @@ body {
   margin: 0.75em;
 }
 
+#slick {
+  background-color: #f7f7f7;
+}
+
+#slideshow {
+  width: 50%;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #665f5f;
+}
+
 .is-96x96 {
   margin: auto;
   margin-bottom: 0.75em;
@@ -52,6 +70,10 @@ body {
 
   #about-text {
     margin-top: 10rem;
+  }
+
+  #slideshow {
+    margin-top: 0.75rem;
   }
 
   #card {
