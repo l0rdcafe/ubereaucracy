@@ -1,5 +1,5 @@
 var slider = (function () {
-  var getSlick = function (cssSelect) {
+  var addSlick = function (cssSelect) {
     $(cssSelect).slick({
       arrows: false,
       adaptiveHeight: true,
@@ -20,9 +20,9 @@ var slider = (function () {
   };
 
   return {
-    getSlick: getSlick
+    addSlick: addSlick
   };
 }());
 
 
-slider.getSlick('#slideshow');
+slider.addSlick('#slideshow');
