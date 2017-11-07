@@ -46,7 +46,12 @@ body {
 }
 
 #slideshow {
-  width: 50%;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.slick-slide {
+  height: 426px;
 }
 
 .slick-prev::before,
@@ -69,7 +74,7 @@ body {
   }
 
   #slideshow {
-    margin-top: 2.5rem;
+    width: 50%;
   }
 
   #card {
