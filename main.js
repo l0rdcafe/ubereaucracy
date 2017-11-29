@@ -54,14 +54,14 @@
            extension: 'jpe?g,png'
          }
        },
-       ignore: '#file',
        messages: {
          fullName: 'Please specify your full name',
          email: 'Please provide a valid e-mail address',
          id: 'Please provide a 13-digit ID number',
          services: 'Please choose a service',
          terms: 'Please check the box',
-         question: 'Please pick an option'
+         question: 'Please pick an option',
+         image: 'Please upload an image file with format JPEG, JPG or PNG'
        },
        errorPlacement: function (error, element) {
          error.appendTo(element.parent().parent());
