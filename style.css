@@ -11,6 +11,10 @@ body {
   margin: auto;
 }
 
+label.error {
+  color: #ff3860;
+}
+
 #nav {
   background: #aaa5;
 }
@@ -67,6 +71,10 @@ body {
 @media (min-width: 769px) {
   #about {
     padding-left: 1.25em;
+  }
+
+  form {
+    width: 50%;
   }
 
   #about-text {

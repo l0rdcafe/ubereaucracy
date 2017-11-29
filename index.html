@@ -13,6 +13,7 @@
   <link href="style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 </head>
 
 <body>
@@ -79,6 +80,7 @@
   </section>
   <section class="section is-paddingless">
       <div class="columns is-centered">
+        <form id="bs-form" method="POST" action="#">
         <div id="form" class="column">
           <div id="card" class="card">
             <div class="card-header">
@@ -86,22 +88,19 @@
                 BS-INF39 Form
               </h1>
               <a class="card-header-icon">
-                <span class="icon">
-                  <i class="delete"></i>
-                </span>
               </a>
             </div>
             <div class="card-content">
               <div class="field">
                 <label class="label">Full Name</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Your Full Legal Name">
+                  <input class="input" type="text" placeholder="Your Full Legal Name" name="fullName">
                 </div>
               </div>
               <div class="field">
                 <label class="label">E-mail Address</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" placeholder="bureaucracy@hi5.com">
+                  <input class="input" type="text" placeholder="bureaucracy@hi5.com" name="email">
                   <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                   </span>
@@ -110,7 +109,7 @@
               <div class="field">
                 <label class="label">ID Number</label>
                 <div class="control has-icons-right">
-                <input class="input" type="text" placeholder="e.g 345 123 9875 219">
+                <input class="input" type="text" placeholder="e.g 345 123 9875 219" name="id">
                 <span class="icon is-small is-right">
                   <i class="fa fa-exclamation"></i>
                 </span>
@@ -121,7 +120,7 @@
                 <label class="label">Services</label>
                 <div class="control">
                   <div class="select">
-                    <select>
+                    <select name="services">
                       <option>Choose a service</option>
                       <option>ID Renewal</option>
                       <option>Driver's License Test</option>
@@ -136,7 +135,7 @@
                   <label class="label">Your Image</label>
                   <div class="file has-name is-fullwidth">
                     <label class="file-label">
-                      <input class="file-input" type="file" name="resume">
+                      <input class="file-input" type="file" name="image" id="file">
                       <span class="file-cta">
                         <span class="file-icon">
                           <i class="fa fa-upload"></i>
@@ -155,13 +154,13 @@
                   <div class="field">
                     <label class="label">Message</label>
                     <div class="control">
-                      <textarea class="textarea" placeholder="Contact us"></textarea>
+                      <textarea class="textarea" placeholder="Contact us" name="message"></textarea>
                     </div>
                   </div>
                   <div class="field">
                     <div class="control">
                       <label class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" name="terms">
                         I agree to the <a href="#">terms and conditions</a>
                       </label>
                     </div>
@@ -180,11 +179,12 @@
                   </div>
                 </div>
             <div class="card-footer">
-              <a class="card-footer-item">Reset</a>
-              <a class="card-footer-item">Submit</a>
+              <a class="card-footer-item" id="reset">Reset</a>
+              <a class="card-footer-item" id="submit">Submit</a>
             </div>
           </div>
         </div>
+      </form>
         <div id="about" class="column">
           <h1 class="title has-text-centered" id="about-text">About Us</h1>
           <p class="subtitle has-text-centered">
@@ -218,6 +218,7 @@
     </div>
   </div>
 </footer>
+<script src="slick.js"></script>
 <script src="main.js"></script>
 </body>
 
