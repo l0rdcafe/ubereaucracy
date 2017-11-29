@@ -13,6 +13,7 @@ body {
 
 label.error {
   color: #ff3860;
+  font-size: 0.75rem;
 }
 
 #nav {

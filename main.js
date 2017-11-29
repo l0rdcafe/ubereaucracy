@@ -47,6 +47,11 @@
          },
          question: {
            required: true
+         },
+         image: {
+           required: true,
+           uploadFile: true,
+           extension: 'jpe?g,png'
          }
        },
        ignore: '#file',
@@ -57,6 +62,9 @@
          services: 'Please choose a service',
          terms: 'Please check the box',
          question: 'Please pick an option'
+       },
+       errorPlacement: function (error, element) {
+         error.appendTo(element.parent().parent());
        }
      });
    };
